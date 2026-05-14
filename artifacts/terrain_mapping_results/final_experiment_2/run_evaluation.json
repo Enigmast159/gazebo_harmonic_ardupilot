@@ -1,0 +1,372 @@
+{
+  "acceptance": {
+    "criteria": {
+      "observed_area": {
+        "enabled": false,
+        "minimum_fraction": null
+      },
+      "processing_time": {
+        "per_frame_threshold_ms": 100.0,
+        "require_max_below_threshold": true,
+        "require_p95_below_threshold": true
+      },
+      "vertical_accuracy": {
+        "primary_metric": "rmse_m",
+        "threshold_m": 1.0
+      }
+    },
+    "overall_pass": true,
+    "processing_time_pass": true,
+    "vertical_accuracy_pass": true
+  },
+  "artifacts": {
+    "error_heatmap_ppm": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/run_evaluation_error_heatmap.ppm",
+    "error_map_npz": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/run_evaluation_error_map.npz",
+    "summary_json": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/run_evaluation.json",
+    "summary_markdown": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/run_evaluation.md"
+  },
+  "generated_at": "2026-05-13T17:30:16.142593Z",
+  "ground_truth": {
+    "data_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_ground_truth.csv",
+    "grid_bounds": {
+      "x_max": 50.0,
+      "x_min": -50.0,
+      "y_max": 50.0,
+      "y_min": -50.0
+    },
+    "grid_shape": {
+      "cols": 257,
+      "rows": 257
+    },
+    "manifest_generated_at": "2026-05-13T16:58:57.823906Z",
+    "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json",
+    "seed": 5002,
+    "source_kind": "terrain_truth_csv"
+  },
+  "metrics": {
+    "latency": {
+      "frame_count": 8279,
+      "max_processing_ms": 9.584,
+      "mean_processing_ms": 3.747069,
+      "p95_processing_ms": 6.9401
+    },
+    "vertical": {
+      "abs_error_within_threshold_cells": 60526,
+      "abs_error_within_threshold_fraction": 0.916394,
+      "abs_error_within_threshold_m": 0.2,
+      "comparison_domain_cells": 66049,
+      "mae_m": 0.089697,
+      "max_abs_error_m": 4.758245,
+      "mean_signed_error_m": 0.028656,
+      "median_abs_error_m": 0.040085,
+      "observed_area_fraction": 0.999985,
+      "observed_cells": 66048,
+      "p95_abs_error_m": 0.270179,
+      "rmse_m": 0.249114
+    }
+  },
+  "reproducibility": {
+    "mapping": {
+      "config_fingerprint": null,
+      "dem_metadata_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/dem_metadata.json",
+      "dem_summary_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/dem_mapper_summary.json",
+      "filters": {
+        "max_range_m": 120.0,
+        "min_range_m": 0.75,
+        "self_filter_base_z_max_m": -0.25,
+        "z_bounds_m": [
+          -5.0,
+          13.0
+        ]
+      },
+      "grid": {
+        "cols": 257,
+        "resolution_x_m": 0.390625,
+        "resolution_y_m": 0.390625,
+        "rows": 257,
+        "x_max": 50.0,
+        "x_min": -50.0,
+        "y_max": 50.0,
+        "y_min": -50.0
+      },
+      "manifest": {
+        "canonical_file_paths": {
+          "collision_stl": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/collision.stl",
+          "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_ground_truth.csv",
+          "heightmap_model_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap",
+          "heightmap_png": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/heightmap.png",
+          "model_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/model.sdf",
+          "stl_mesh": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/collision.stl",
+          "world_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/worlds/random_terrain_ardupilot.sdf"
+        },
+        "generated_at": "2026-05-13T16:58:57.823906Z",
+        "grid_shape_raw": {
+          "cols": 257,
+          "rows": 257
+        },
+        "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json",
+        "seed": 5002,
+        "terrain_extents": {
+          "x_max": 50.0,
+          "x_min": -50.0,
+          "y_max": 50.0,
+          "y_min": -50.0,
+          "z_max": 8.0,
+          "z_min": 0.0
+        },
+        "world_name": "random_terrain_ardupilot"
+      }
+    },
+    "mission": {
+      "bounds": {
+        "x_max": 50.0,
+        "x_min": -50.0,
+        "y_max": 50.0,
+        "y_min": -50.0
+      },
+      "config_fingerprint": null,
+      "mission_summary_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/mission_summary.json",
+      "planned_path_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/planned_path.json",
+      "planner": {
+        "boundary_margin_m": 5.0,
+        "lane_spacing_m": 12.0,
+        "mapping_altitude_m": 15.0,
+        "return_home_altitude_m": null,
+        "return_home_x_m": -44.0,
+        "return_home_y_m": -44.0,
+        "sweep_direction": "x",
+        "waypoint_tolerance_m": 0.25
+      }
+    },
+    "software": {
+      "experiment_request_fingerprint": {
+        "exists": false,
+        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/experiment_request.json"
+      },
+      "experiment_request_path": null,
+      "numpy_version": "2.2.6",
+      "platform": "Linux-6.8.0-111-generic-x86_64-with-glibc2.35",
+      "python_version": "3.10.12"
+    },
+    "terrain": {
+      "ground_truth_fingerprint": {
+        "exists": true,
+        "modified_at_epoch_s": 1778691537.819465,
+        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_ground_truth.csv",
+        "sha256": "09cae2f5621e8c27b5722696e278bf981faa0f25af19a1e9a8a82935c085f8fa",
+        "size_bytes": 2351093
+      },
+      "manifest_fingerprint": {
+        "exists": true,
+        "modified_at_epoch_s": 1778691537.823465,
+        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json",
+        "sha256": "1494aeb771b457d2df8d788088a82732e4a9ed432a34d8a522a73878cb1ae7e7",
+        "size_bytes": 3268
+      },
+      "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json",
+      "seed": 5002
+    }
+  },
+  "run_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2",
+  "run_id": "final_experiment_2",
+  "runtime_status": {
+    "dem_mapper_summary": {
+      "coverage_cells": 66048,
+      "coverage_ratio": 0.999985,
+      "cumulative_points_used": 47586000,
+      "generated_at": "2026-05-13T17:13:51Z",
+      "grid": {
+        "cols": 257,
+        "resolution_x_m": 0.390625,
+        "resolution_y_m": 0.390625,
+        "rows": 257,
+        "x_max": 50.0,
+        "x_min": -50.0,
+        "y_max": 50.0,
+        "y_min": -50.0
+      },
+      "latency": {
+        "frames_processed": 8279,
+        "frames_skipped_no_pose": 0,
+        "max_processing_ms": 9.584,
+        "mean_processing_ms": 3.747,
+        "p95_processing_ms": 6.94
+      },
+      "results": {
+        "coverage_quicklook": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/coverage_quicklook.pgm",
+        "dem_cells_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/dem_cells.csv",
+        "dem_map": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/dem_map.npz",
+        "dem_quicklook": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/dem_quicklook.pgm",
+        "latency_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/dem_latency.csv",
+        "metadata_json": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/dem_metadata.json",
+        "results_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2",
+        "summary_json": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/dem_mapper_summary.json"
+      },
+      "run_id": "final_experiment_2",
+      "sample_count_total": 47586000
+    },
+    "mission_events_head": [
+      {
+        "details": {
+          "results": {
+            "actual_trajectory": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/actual_trajectory.jsonl",
+            "mission_events": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/mission_events.jsonl",
+            "mission_status": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/mission_status.json",
+            "mission_summary": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/mission_summary.json",
+            "planned_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/planned_path.json",
+            "results_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2"
+          }
+        },
+        "event": "mission_initialized",
+        "state": "initializing",
+        "timestamp": "2026-05-13T17:00:02.242930Z"
+      },
+      {
+        "details": {
+          "reason": "starting mission controller",
+          "state": "connecting"
+        },
+        "event": "state_transition",
+        "state": "connecting",
+        "timestamp": "2026-05-13T17:00:02.258001Z"
+      },
+      {
+        "details": {
+          "reason": "MAVLink transport opened",
+          "state": "waiting_for_heartbeat"
+        },
+        "event": "state_transition",
+        "state": "waiting_for_heartbeat",
+        "timestamp": "2026-05-13T17:00:02.304658Z"
+      },
+      {
+        "details": {},
+        "event": "heartbeat_received",
+        "state": "waiting_for_heartbeat",
+        "timestamp": "2026-05-13T17:04:12.873915Z"
+      },
+      {
+        "details": {
+          "reason": "heartbeat received",
+          "state": "setting_guided_mode"
+        },
+        "event": "state_transition",
+        "state": "setting_guided_mode",
+        "timestamp": "2026-05-13T17:04:12.874508Z"
+      }
+    ],
+    "mission_summary": {
+      "bounds": {
+        "x_max": 50.0,
+        "x_min": -50.0,
+        "y_max": 50.0,
+        "y_min": -50.0
+      },
+      "completed_at": "2026-05-13T17:13:51.182680Z",
+      "dry_run": false,
+      "duration_s": 828.94,
+      "failure_reason": null,
+      "final_status": "landing",
+      "planner": {
+        "boundary_margin_m": 5.0,
+        "lane_spacing_m": 12.0,
+        "mapping_altitude_m": 15.0,
+        "return_home_altitude_m": null,
+        "return_home_x_m": -44.0,
+        "return_home_y_m": -44.0,
+        "sweep_direction": "x",
+        "waypoint_tolerance_m": 0.25
+      },
+      "results": {
+        "actual_trajectory": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/actual_trajectory.jsonl",
+        "mission_events": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/mission_events.jsonl",
+        "mission_status": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/mission_status.json",
+        "mission_summary": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/mission_summary.json",
+        "planned_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2/planned_path.json",
+        "results_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_2"
+      },
+      "run_id": "final_experiment_2",
+      "trajectory_samples": 1605,
+      "waypoints_reached": 19,
+      "waypoints_total": 19
+    },
+    "trajectory_head": [
+      {
+        "pose": {
+          "qw": 1.0,
+          "qx": -3.750177094620924e-19,
+          "qy": 1.1949517410888772e-18,
+          "qz": 5.463097286621397e-19,
+          "received_wall_time": 16190.760757438,
+          "stamp_sec": 10.524000000000001,
+          "x": -44.0,
+          "y": -44.0,
+          "z": 3.7229996983942764
+        },
+        "state": "waiting_for_heartbeat",
+        "timestamp": "2026-05-13T17:00:02.305333Z"
+      },
+      {
+        "pose": {
+          "qw": 1.0,
+          "qx": -3.750177094620924e-19,
+          "qy": 1.1949517410888772e-18,
+          "qz": 5.463097286621397e-19,
+          "received_wall_time": 16191.280098808,
+          "stamp_sec": 11.02,
+          "x": -44.0,
+          "y": -44.0,
+          "z": 3.7229996983942764
+        },
+        "state": "waiting_for_heartbeat",
+        "timestamp": "2026-05-13T17:00:02.824678Z"
+      },
+      {
+        "pose": {
+          "qw": 1.0,
+          "qx": -3.750177094620924e-19,
+          "qy": 1.1949517410888772e-18,
+          "qz": 5.463097286621397e-19,
+          "received_wall_time": 16191.780805078,
+          "stamp_sec": 11.54,
+          "x": -44.0,
+          "y": -44.0,
+          "z": 3.7229996983942764
+        },
+        "state": "waiting_for_heartbeat",
+        "timestamp": "2026-05-13T17:00:03.325374Z"
+      },
+      {
+        "pose": {
+          "qw": 1.0,
+          "qx": -3.750177094620924e-19,
+          "qy": 1.1949517410888772e-18,
+          "qz": 5.463097286621397e-19,
+          "received_wall_time": 16192.341352133,
+          "stamp_sec": 12.081,
+          "x": -44.0,
+          "y": -44.0,
+          "z": 3.7229996983942764
+        },
+        "state": "waiting_for_heartbeat",
+        "timestamp": "2026-05-13T17:00:03.885931Z"
+      },
+      {
+        "pose": {
+          "qw": 1.0,
+          "qx": -3.750177094620924e-19,
+          "qy": 1.1949517410888772e-18,
+          "qz": 5.463097286621397e-19,
+          "received_wall_time": 16192.841772182,
+          "stamp_sec": 12.597,
+          "x": -44.0,
+          "y": -44.0,
+          "z": 3.7229996983942764
+        },
+        "state": "waiting_for_heartbeat",
+        "timestamp": "2026-05-13T17:00:04.386341Z"
+      }
+    ]
+  },
+  "schema_version": 2
+}

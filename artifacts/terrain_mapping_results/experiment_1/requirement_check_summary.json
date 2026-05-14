@@ -1,0 +1,76 @@
+{
+  "run_id": "experiment_1",
+  "generated_at": "2026-05-13T13:19:04Z",
+  "run_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/experiment_1",
+  "session_window": {
+    "latest_mission_initialized_at": "2026-05-13T12:49:20.691594Z",
+    "completed_at": "2026-05-13T13:04:02.506469Z",
+    "trajectory_samples_in_session": 1696,
+    "trajectory_samples_in_sweep": 334
+  },
+  "requirements": {
+    "trajectory_deviation_le_0_25m": {
+      "status": false,
+      "metric_definition": "Horizontal distance from each executing_sweep pose sample to the planned polyline in map frame.",
+      "threshold_m": 0.25,
+      "stats": {
+        "mean_m": 0.107492,
+        "p95_m": 0.37825,
+        "max_m": 1.039954,
+        "share_le_threshold": 0.904192,
+        "samples_le_threshold": 302,
+        "samples_total": 334
+      },
+      "active_segment_reference": {
+        "mean_m": 0.189655,
+        "p95_m": 0.845234,
+        "max_m": 1.568748,
+        "samples_total": 333
+      }
+    },
+    "terrain_height_accuracy_le_0_2m": {
+      "status": false,
+      "metric_definition": "DEM vertical error against terrain ground truth on observed cells.",
+      "threshold_m": 0.2,
+      "primary_metric": "rmse_m",
+      "stats": {
+        "observed_cells": 66044,
+        "comparison_cells": 66049,
+        "observed_area_fraction": 0.999924,
+        "mae_m": 1.598614,
+        "rmse_m": 2.008688,
+        "p95_abs_error_m": 3.92831,
+        "max_abs_error_m": 6.478847
+      }
+    }
+  },
+  "supporting_observations": {
+    "mapping_altitude_target_m": 15.0,
+    "vehicle_altitude_abs_error_during_sweep": {
+      "mean_m": 2.494008,
+      "p95_m": 2.904552,
+      "max_m": 4.499982
+    },
+    "dem_signed_error": {
+      "mean_signed_m": 0.042466,
+      "median_signed_m": 0.041637,
+      "p05_signed_m": -3.288237,
+      "p95_signed_m": 3.350409
+    }
+  },
+  "diagnostic_hypotheses": {
+    "y_axis_mirroring_check": {
+      "description": "Diagnostic comparison of the saved DEM against ground truth after simple raster transforms.",
+      "rmse_m": {
+        "identity": 2.008688,
+        "flip_ud": 0.30524,
+        "flip_lr": 2.011222,
+        "rot180": 2.051694,
+        "rot90": 2.133711,
+        "rot270": 1.767493
+      },
+      "interpretation": "A vertical flip of the DEM (equivalent to Y-axis inversion in map indexing) collapses RMSE from 2.01 m to 0.305 m, which strongly suggests a frame/sign mismatch along the Y axis between mapping output and terrain ground truth."
+    }
+  },
+  "overall_verdict": false
+}

@@ -1,0 +1,10 @@
+{
+  "coverage_ratio": 1.0,
+  "latency": {
+    "frames_processed": 3,
+    "max_processing_ms": 14.0,
+    "mean_processing_ms": 13.0,
+    "p95_processing_ms": 13.9
+  },
+  "run_id": "smoke_dem_validation"
+}

@@ -1,0 +1,485 @@
+{"details": {"results": {"actual_trajectory": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/actual_trajectory.jsonl", "mission_events": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/mission_events.jsonl", "mission_status": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/mission_status.json", "mission_summary": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/mission_summary.json", "planned_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/planned_path.json", "results_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1"}}, "event": "mission_initialized", "state": "initializing", "timestamp": "2026-05-13T13:33:18.954269Z"}
+{"details": {"reason": "starting mission controller", "state": "connecting"}, "event": "state_transition", "state": "connecting", "timestamp": "2026-05-13T13:33:18.969225Z"}
+{"details": {"reason": "MAVLink transport opened", "state": "waiting_for_heartbeat"}, "event": "state_transition", "state": "waiting_for_heartbeat", "timestamp": "2026-05-13T13:33:19.027582Z"}
+{"details": {}, "event": "heartbeat_received", "state": "waiting_for_heartbeat", "timestamp": "2026-05-13T13:33:20.866783Z"}
+{"details": {"reason": "heartbeat received", "state": "setting_guided_mode"}, "event": "state_transition", "state": "setting_guided_mode", "timestamp": "2026-05-13T13:33:20.867476Z"}
+{"details": {}, "event": "set_mode_guided", "state": "setting_guided_mode", "timestamp": "2026-05-13T13:33:20.980951Z"}
+{"details": {"reason": "guided mode confirmed", "state": "arming"}, "event": "state_transition", "state": "arming", "timestamp": "2026-05-13T13:33:20.981818Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:21.181068Z"}
+{"details": {"mode": "GUIDED", "motors_armed": false}, "event": "arming_progress", "state": "arming", "timestamp": "2026-05-13T13:33:21.181997Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:21.580685Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:21.781350Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:22.181200Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:22.580775Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:22.781374Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:23.181126Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:23.381298Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:23.780696Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:24.181018Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:24.580877Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:24.980679Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:25.380780Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:25.780706Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:25.980942Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:26.181100Z"}
+{"details": {"mode": "GUIDED", "motors_armed": false}, "event": "arming_progress", "state": "arming", "timestamp": "2026-05-13T13:33:26.182435Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:26.580634Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:26.780863Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:27.180791Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:27.381017Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:27.780685Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:27.980921Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:28.381438Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:28.780609Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:28.980911Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:29.380748Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:29.582293Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:29.782416Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:30.182288Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:30.382451Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:30.782138Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:30.982355Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:31.182296Z"}
+{"details": {"mode": "GUIDED", "motors_armed": false}, "event": "arming_progress", "state": "arming", "timestamp": "2026-05-13T13:33:31.184118Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:31.382908Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:31.782052Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:31.982232Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:32.182133Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:32.582353Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:32.982122Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:33.382452Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:33.782125Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:33.983433Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:34.183932Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:34.583352Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:34.783442Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:35.183534Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:35.584098Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:35.983618Z"}
+{"details": {"mode": "GUIDED", "motors_armed": false}, "event": "arming_progress", "state": "arming", "timestamp": "2026-05-13T13:33:36.184695Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:36.383648Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:36.783546Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:37.183911Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:37.384245Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:37.783520Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:38.183504Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:38.583969Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:38.783827Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:39.183454Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:39.583287Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:39.784442Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:40.183362Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:40.383586Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:40.583790Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:40.783682Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:40.983540Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:41.383467Z"}
+{"details": {"mode": "GUIDED", "motors_armed": false}, "event": "arming_progress", "state": "arming", "timestamp": "2026-05-13T13:33:41.384299Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:41.583766Z"}
+{"details": {}, "event": "arm_command_sent", "state": "arming", "timestamp": "2026-05-13T13:33:41.984320Z"}
+{"details": {"reason": "vehicle armed", "state": "taking_off"}, "event": "state_transition", "state": "taking_off", "timestamp": "2026-05-13T13:33:42.185049Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:42.383369Z"}
+{"details": {"current_altitude_m": 6.66, "mode": "GUIDED", "motors_armed": true, "target_altitude_m": 15.0}, "event": "takeoff_progress", "state": "taking_off", "timestamp": "2026-05-13T13:33:42.384204Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:42.583488Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:42.983466Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:43.183560Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:43.583448Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:43.783458Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:43.983649Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:44.383416Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:44.585542Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:44.786805Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:45.185475Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:45.385508Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:45.589433Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:45.789422Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:46.189459Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:46.389486Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:46.789389Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:46.989472Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:47.389355Z"}
+{"details": {"current_altitude_m": 13.702, "mode": "GUIDED", "motors_armed": true, "target_altitude_m": 15.0}, "event": "takeoff_progress", "state": "taking_off", "timestamp": "2026-05-13T13:33:47.389948Z"}
+{"details": {"altitude_m": 15.0}, "event": "takeoff_command_sent", "state": "taking_off", "timestamp": "2026-05-13T13:33:47.789349Z"}
+{"details": {"reason": "takeoff altitude reached", "state": "executing_sweep"}, "event": "state_transition", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:47.789879Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:47.989470Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:48.389343Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:48.593924Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:48.993773Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:49.399975Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:49.799193Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:50.199333Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:50.599202Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:50.999261Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:51.199354Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:51.599170Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:51.799262Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:52.199442Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:52.599110Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:52.799202Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:52.999335Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:53.399228Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:53.599204Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:53.999228Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:54.399137Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:54.602693Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:54.802759Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:55.003644Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:55.402687Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:55.802784Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:56.202887Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:56.602678Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:56.802737Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:57.202796Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:57.402827Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:57.607038Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:58.007132Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:58.407068Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:58.607079Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:59.007115Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:59.407049Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:33:59.607073Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:00.007061Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:00.408463Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:00.808247Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:01.008282Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:01.408323Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:01.808260Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:02.208297Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:02.408267Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:02.608332Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:02.808332Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:03.208367Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:03.608242Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:03.808289Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:04.208544Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:04.608284Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:05.008241Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:05.208309Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:05.408280Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:05.608267Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:05.808294Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:06.208457Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:06.408343Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:06.808243Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:07.008306Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:07.408283Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:07.808283Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:08.008277Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:08.208365Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:08.608286Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:09.008308Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:09.408268Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:09.808271Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:10.211688Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:10.608291Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:11.008291Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:11.408269Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:11.608251Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:12.008337Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:12.408266Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:12.808298Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:13.208371Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:13.608248Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:14.008273Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:14.208392Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:14.608349Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:14.808360Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:15.208484Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:15.408334Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:15.808335Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:16.211661Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:16.608246Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:16.808241Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:17.008270Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:17.208398Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:17.613245Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:17.813308Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:18.213271Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:18.413371Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:18.813224Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:19.213453Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:19.613307Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:19.813315Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:20.213310Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:20.613335Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:20.813212Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:21.213412Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:21.413254Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:21.813261Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:22.013501Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:22.413338Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:22.813330Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:23.013268Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:23.213489Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:23.618008Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:23.818113Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:24.018113Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:24.418041Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:24.818173Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:25.019027Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:25.218679Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:25.618250Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:25.818088Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:26.218208Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:26.622389Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:27.022356Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:27.222664Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:27.622375Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:28.022432Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:28.222536Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:28.622370Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:29.022380Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:29.422444Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:29.822471Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:30.222465Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:30.422468Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:30.822404Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:31.222585Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:31.622390Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:31.822425Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:32.222472Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:32.622432Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:33.022524Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:33.422375Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:33.822415Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:34.222517Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:34.622374Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:35.022361Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:35.222685Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:35.626108Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:35.826123Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:36.226243Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:36.626110Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:36.826141Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:37.226165Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:37.626351Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:38.026199Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:38.426183Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:38.826124Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:39.026129Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:39.226268Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:39.626117Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:39.826218Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:40.026117Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:40.426107Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:40.826118Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:41.226185Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:41.626108Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:41.826196Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:42.226217Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:42.630047Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:42.830156Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:43.230135Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:43.429965Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:43.630088Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:44.030276Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:44.430099Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:44.634297Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:45.034181Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:45.234345Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:45.634311Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:45.835259Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:46.238153Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:46.438216Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:46.838028Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:47.038118Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:47.438037Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:47.638036Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:48.038076Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:48.438088Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:48.838027Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:49.038065Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:49.243183Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:49.443110Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:49.843187Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:50.243115Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:50.443163Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:50.648073Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:50.847986Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:51.048125Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:51.447986Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:51.652141Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:51.852162Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:52.252367Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:52.652148Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:52.852083Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:53.252143Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:53.656150Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:54.056134Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:54.256123Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:54.456110Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:54.660163Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:54.860263Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:55.260248Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:55.460252Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:55.860190Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:56.060220Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:56.260893Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:56.660440Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:57.060242Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:57.260279Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:57.460272Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:57.664467Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:58.064507Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:58.464606Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:58.664833Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:59.064546Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:59.464548Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:34:59.664835Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:00.064424Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:00.264970Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:00.664555Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:01.064503Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:01.464448Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:01.664561Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:02.064816Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:02.464599Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:02.864536Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:03.264670Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:03.664421Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:03.864570Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:04.064516Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:04.464524Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:04.864542Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:05.064508Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:05.464411Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:05.664455Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:06.064552Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:06.264807Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:06.668364Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:06.868525Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:07.268574Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:07.668741Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:08.068301Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:08.468390Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:08.672510Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:08.872525Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:09.272609Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:09.472546Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:09.677594Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:09.877586Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:10.077591Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:10.477595Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:10.677609Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:11.077544Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:11.277668Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:11.681862Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:12.081856Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:12.281925Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:12.686086Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:13.086074Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:13.486081Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:13.686059Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:14.086069Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:14.286227Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:14.686144Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:14.886132Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:15.086558Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:15.486013Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:15.686233Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:15.886256Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:16.289948Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:16.689846Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:16.889630Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:17.089722Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:17.289955Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:17.689583Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:17.889693Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:18.289696Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:18.490391Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:18.693807Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:19.093732Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:19.493714Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:19.693705Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:20.093701Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:20.293805Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:20.494005Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:20.893735Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:21.293748Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:21.493700Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:21.693715Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:22.093771Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:22.493688Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:22.693730Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:23.093762Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:23.493962Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:23.893785Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:24.293793Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:24.698348Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:25.098897Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:25.498328Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:25.898199Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:26.098207Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:26.498294Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:26.898215Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:27.098326Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:27.298380Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:27.698302Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:27.898324Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:28.298315Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:28.698196Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:29.098207Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:29.498449Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:29.703104Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:30.102932Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:30.303094Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:30.703318Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:31.103040Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:31.303174Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:31.703011Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:32.103179Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:32.303444Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:32.703138Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:32.903080Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:33.303148Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:33.708063Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:33.908135Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:34.308228Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:34.708088Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:34.908072Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:35.108145Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:35.508174Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:35.908084Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:36.108307Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:36.508297Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:36.908022Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:37.108071Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:37.508164Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:37.908061Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:38.108132Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:38.508124Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:38.708083Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:39.108064Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:39.308199Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:39.508233Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:39.908079Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:40.108139Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:40.308424Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:40.708034Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:41.108085Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:41.508058Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:41.708104Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:42.108094Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:42.308382Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:42.708129Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:43.108072Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:43.508044Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:43.708111Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:44.108044Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:44.308129Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:44.513084Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:44.912803Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:45.112810Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:45.312894Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:45.713071Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:46.112981Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:46.513062Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:46.912810Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:47.112798Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:47.312774Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:47.715923Z"}
+{"details": {"index": 0, "waypoint": {"x": -45.0, "y": -45.0, "z": 15.0}}, "event": "waypoint_command_sent", "state": "executing_sweep", "timestamp": "2026-05-13T13:35:47.916598Z"}
+{"details": {"reason": "waypoint 0 timeout after 120.0s", "state": "aborting"}, "event": "state_transition", "state": "aborting", "timestamp": "2026-05-13T13:35:47.918777Z"}
+{"details": {}, "event": "abort_land_command_sent", "state": "aborting", "timestamp": "2026-05-13T13:35:48.115931Z"}
+{"details": {"reason": "waypoint 0 timeout after 120.0s", "state": "failed"}, "event": "state_transition", "state": "failed", "timestamp": "2026-05-13T13:35:52.920207Z"}
+{"details": {"summary": {"bounds": {"x_max": 50.0, "x_min": -50.0, "y_max": 50.0, "y_min": -50.0}, "completed_at": "2026-05-13T13:35:52.920506Z", "dry_run": false, "duration_s": 153.967, "failure_reason": "waypoint 0 timeout after 120.0s", "final_status": "failed", "planner": {"boundary_margin_m": 5.0, "lane_spacing_m": 12.0, "mapping_altitude_m": 15.0, "return_home_altitude_m": null, "return_home_x_m": -44.0, "return_home_y_m": -44.0, "sweep_direction": "x", "waypoint_tolerance_m": 0.25}, "results": {"actual_trajectory": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/actual_trajectory.jsonl", "mission_events": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/mission_events.jsonl", "mission_status": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/mission_status.json", "mission_summary": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/mission_summary.json", "planned_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1/planned_path.json", "results_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/demo_experiment_1"}, "run_id": "demo_experiment_1", "trajectory_samples": 308, "waypoints_reached": 0, "waypoints_total": 19}}, "event": "mission_failed", "state": "failed", "timestamp": "2026-05-13T13:35:52.923778Z"}

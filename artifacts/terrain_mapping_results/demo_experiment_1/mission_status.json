@@ -1,0 +1,10 @@
+{
+  "current_waypoint_index": 0,
+  "dry_run": false,
+  "failure_reason": "waypoint 0 timeout after 120.0s",
+  "run_id": "demo_experiment_1",
+  "state": "failed",
+  "timestamp": "2026-05-13T13:35:52.920862Z",
+  "trajectory_samples": 308,
+  "waypoint_count": 19
+}

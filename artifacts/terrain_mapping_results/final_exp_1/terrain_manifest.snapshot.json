@@ -1,0 +1,169 @@
+{
+  "canonical_file_paths": {
+    "collision_stl": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/collision.stl",
+    "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_exp_1/terrain_ground_truth.snapshot.csv",
+    "heightmap_model_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap",
+    "heightmap_png": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/heightmap.png",
+    "manifest": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_exp_1/terrain_manifest.snapshot.json",
+    "model_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/model.sdf",
+    "world_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/worlds/random_terrain_ardupilot.sdf"
+  },
+  "generated_at": "2026-05-13T16:58:57.823906Z",
+  "generator": "generate_heightmap_world.py",
+  "generator_params": {
+    "drone_x": -44.0,
+    "drone_y": -44.0,
+    "drone_z": null,
+    "lacunarity": 2.0,
+    "octaves": 4,
+    "persistence": 0.42,
+    "platform_x": -44.0,
+    "platform_y": -44.0,
+    "platform_z": null,
+    "sampling": 2,
+    "scale": 28.0,
+    "seed": 5002,
+    "size": 257,
+    "smooth_passes": 3,
+    "terrain_model": "terrain_heightmap",
+    "terrain_x": 100.0,
+    "terrain_y": 100.0,
+    "terrain_z": 8.0,
+    "tree_count": 18,
+    "tree_exclusion_radius": 10.0,
+    "tree_model": "pine_tree",
+    "world": "random_terrain_ardupilot"
+  },
+  "platform_spawn": {
+    "x_m": -44.0,
+    "y_m": -44.0,
+    "z_m": 3.278
+  },
+  "seed": 5002,
+  "terrain_representation": "sdf_heightmap",
+  "terrain_xy_extents_m": {
+    "x": 100.0,
+    "y": 100.0
+  },
+  "terrain_z_scale_m": 8.0,
+  "vegetation": {
+    "tree_count": 18,
+    "tree_exclusion_radius_m": 10.0,
+    "tree_model": "pine_tree",
+    "tree_poses": [
+      [
+        29.946,
+        5.907,
+        3.62,
+        -0.505461
+      ],
+      [
+        -36.752,
+        3.143,
+        6.09,
+        1.174161
+      ],
+      [
+        -9.873,
+        4.483,
+        4.901,
+        1.145957
+      ],
+      [
+        -2.255,
+        12.957,
+        3.279,
+        0.330818
+      ],
+      [
+        -30.491,
+        -18.343,
+        5.066,
+        -1.062511
+      ],
+      [
+        -2.375,
+        -25.313,
+        5.639,
+        -0.399921
+      ],
+      [
+        35.671,
+        11.816,
+        2.746,
+        -2.212502
+      ],
+      [
+        -33.341,
+        30.591,
+        3.842,
+        0.218128
+      ],
+      [
+        29.687,
+        31.528,
+        2.931,
+        -2.832891
+      ],
+      [
+        5.527,
+        10.447,
+        1.895,
+        -0.779671
+      ],
+      [
+        40.424,
+        24.242,
+        4.853,
+        -1.132767
+      ],
+      [
+        -34.878,
+        -2.899,
+        5.452,
+        2.95846
+      ],
+      [
+        -25.259,
+        3.079,
+        5.705,
+        2.228805
+      ],
+      [
+        -31.756,
+        -33.217,
+        3.364,
+        3.124224
+      ],
+      [
+        -31.665,
+        8.415,
+        4.946,
+        1.719637
+      ],
+      [
+        34.298,
+        -38.838,
+        2.616,
+        0.330009
+      ],
+      [
+        -25.363,
+        30.52,
+        1.452,
+        -2.099959
+      ],
+      [
+        31.555,
+        -7.44,
+        4.929,
+        2.268131
+      ]
+    ]
+  },
+  "vehicle_spawn": {
+    "x_m": -44.0,
+    "y_m": -44.0,
+    "z_m": 3.748
+  }
+}

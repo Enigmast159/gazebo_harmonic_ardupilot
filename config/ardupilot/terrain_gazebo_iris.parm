@@ -1,0 +1,26 @@
+# Extra SITL parameters for the Gazebo Harmonic terrain world.
+#
+# The Gazebo JSON backend already provides idealized IMU data. Keeping gyro
+# calibration disabled avoids false "gyros inconsistent" pre-arm failures after
+# bouncy simulated contact or stale EEPROM state.
+INS_GYR_CAL 0
+
+# This is a research simulator; arming checks are handled by the scenario setup.
+# It prevents Gazebo contact transients from blocking takeoff during development.
+ARMING_CHECK 0
+
+# MAVProxy's "takeoff" command is accepted by Copter in guided-style modes, not
+# in STABILIZE. Start there so "arm throttle" followed by "takeoff 10" produces
+# motor output instead of a NAV_TAKEOFF failure.
+INITIAL_MODE 4
+FRAME_TYPE 1
+FLTMODE1 4
+FLTMODE2 4
+FLTMODE3 4
+FLTMODE4 4
+FLTMODE5 4
+FLTMODE6 4
+FLTMODE_CH 0
+
+# Keep motors armed during short scripted tests unless explicitly disarmed.
+DISARM_DELAY 0

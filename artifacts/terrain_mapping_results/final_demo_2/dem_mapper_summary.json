@@ -1,0 +1,35 @@
+{
+  "coverage_cells": 0,
+  "coverage_ratio": 0.0,
+  "cumulative_points_used": 0,
+  "generated_at": "2026-05-04T21:24:05Z",
+  "grid": {
+    "cols": 129,
+    "resolution_x_m": 0.78125,
+    "resolution_y_m": 0.78125,
+    "rows": 129,
+    "x_max": 50.0,
+    "x_min": -50.0,
+    "y_max": 50.0,
+    "y_min": -50.0
+  },
+  "latency": {
+    "frames_processed": 0,
+    "frames_skipped_no_pose": 0,
+    "max_processing_ms": null,
+    "mean_processing_ms": null,
+    "p95_processing_ms": null
+  },
+  "results": {
+    "coverage_quicklook": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/coverage_quicklook.pgm",
+    "dem_cells_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/dem_cells.csv",
+    "dem_map": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/dem_map.npz",
+    "dem_quicklook": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/dem_quicklook.pgm",
+    "latency_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/dem_latency.csv",
+    "metadata_json": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/dem_metadata.json",
+    "results_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2",
+    "summary_json": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/dem_mapper_summary.json"
+  },
+  "run_id": "final_demo_2",
+  "sample_count_total": 0
+}

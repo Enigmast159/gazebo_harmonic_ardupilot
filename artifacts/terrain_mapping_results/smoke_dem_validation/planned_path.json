@@ -1,0 +1,20 @@
+{
+  "bounds": {
+    "x_max": 1.0,
+    "x_min": -1.0,
+    "y_max": 1.0,
+    "y_min": -1.0
+  },
+  "bounds_metadata": {
+    "canonical_file_paths": {
+      "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_ground_truth.snapshot.csv"
+    },
+    "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_manifest.snapshot.json",
+    "seed": 999
+  },
+  "planner": {
+    "lane_spacing_m": 12.0,
+    "mapping_altitude_m": 15.0
+  },
+  "run_id": "smoke_dem_validation"
+}

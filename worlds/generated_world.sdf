@@ -1,0 +1,173 @@
+<!-- DEPRECATED: This world file is stale and non-canonical.
+     Do NOT build new workflows on this file.
+     Canonical world: random_terrain_ardupilot.sdf
+     Secondary world: random_terrain.sdf
+     This file uses outdated model references (iris_with_3d_lidar, inline terrain)
+     and is kept only for historical reference. -->
+<?xml version="1.0" ?>
+<sdf version="1.10">
+  <world name="generated_terrain">
+    <!-- Physics settings -->
+    <physics type="dart" name="default_physics">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <!-- ArduPilot SITL plugin -->
+    <plugin filename="gz-sim-ardupilot-plugin" name="gz::sim::systems::ArduPilotPlugin">
+      <fdm_addr>127.0.0.1</fdm_addr>
+      <fdm_port_in>9002</fdm_port_in>
+      <fdm_port_out>9003</fdm_port_out>
+      <modelXYZToAircraftXForwardZDown>0 0 0 0 0 0</modelXYZToAircraftXForwardZDown>
+      <connectionTimeoutMaxCount>10</connectionTimeoutMaxCount>
+      <imuName>imu</imuName>
+    </plugin>
+
+    <!-- Gazebo core plugins -->
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+
+    <!-- Scene settings -->
+    <scene>
+      <ambient>0.5 0.5 0.5 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>true</shadows>
+      <sky></sky>
+    </scene>
+
+    <!-- Sun light -->
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.3 0.3 0.3 1</specular>
+      <attenuation>
+        <range>10000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- Ground plane -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>1000 1000</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>100</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>1000 1000</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.3 0.3 0.3 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- Terrain: visual=mesh, collision=heightmap -->
+    <model name="terrain">
+      <static>true</static>
+      <link name="link">
+        <visual name="visual">
+          <cast_shadows>true</cast_shadows>
+          <geometry>
+            <mesh>
+              <uri>terrain_mesh.obj</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <heightmap>
+              <uri>terrain_heightmap.png</uri>
+              <size>200.0 200.0 15.0</size>
+              <pos>0 0 0</pos>
+            </heightmap>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>100</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Drone platform -->
+    <model name="drone_platform">
+      <pose>-105.0 -105.0 19.0 0 0 0</pose>
+      <static>true</static>
+      <link name="platform_link">
+        <visual name="platform_visual">
+          <geometry>
+            <cylinder>
+              <radius>2.0</radius>
+              <length>0.5</length>
+            </cylinder>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.6 0.6 0.6 1</diffuse>
+            <specular>0.3 0.3 0.3 1</specular>
+          </material>
+        </visual>
+        <collision name="platform_collision">
+          <geometry>
+            <cylinder>
+              <radius>2.0</radius>
+              <length>0.5</length>
+            </cylinder>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- Drone -->
+    <include>
+      <uri>model://iris_with_3d_lidar</uri>
+      <name>iris_with_3d_lidar</name>
+      <pose>-105.0 -105.0 20.0 0 0 0</pose>
+    </include>
+
+    <!-- Spherical coordinates -->
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>-35.363262</latitude_deg>
+      <longitude_deg>149.165237</longitude_deg>
+      <elevation>584</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
+    <!-- Wind -->
+    <wind>
+      <linear_velocity>0 0 0</linear_velocity>
+    </wind>
+  </world>
+</sdf>

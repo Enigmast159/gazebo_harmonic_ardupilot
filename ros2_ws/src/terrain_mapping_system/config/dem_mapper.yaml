@@ -1,0 +1,50 @@
+/**:
+  ros__parameters:
+    point_topic: /terrain_mapping/lidar/points
+    pose_topic: /terrain_mapping/vehicle/pose
+    run_id: ''
+    results_root: /home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results
+
+    use_terrain_manifest: true
+    manifest_path: /home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json
+    grid_resolution_m: 0.0
+
+    fallback_bounds.x_min: -50.0
+    fallback_bounds.x_max: 50.0
+    fallback_bounds.y_min: -50.0
+    fallback_bounds.y_max: 50.0
+    fallback_bounds.resolution_m: 1.0
+
+    snapshot_interval_s: 5.0
+    publish_dem_pointcloud: true
+    dem_pointcloud_topic: /terrain_mapping/dem/points
+    dem_frame_id: map
+    dem_min_samples: 1
+    min_range_m: 0.75
+    max_range_m: 120.0
+    self_filter_base_z_max_m: -0.25
+    z_margin_below_m: 5.0
+    z_margin_above_m: 5.0
+    evaluation.write_on_shutdown: true
+    evaluation.vertical_threshold_m: 1.0
+    evaluation.latency_threshold_ms: 100.0
+    evaluation.primary_vertical_metric: rmse_m
+    evaluation.output_basename: run_evaluation
+    sensor_axis_signs.x: 1.0
+    sensor_axis_signs.y: 1.0
+    sensor_axis_signs.z: 1.0
+    # The current map-frame DEM is mirrored along Y relative to terrain truth.
+    # Correct it after rigid transforms so vertical filtering remains physical.
+    map_axis_signs.x: 1.0
+    map_axis_signs.y: -1.0
+    map_axis_signs.z: 1.0
+
+    # Derived from models/iris_with_ardupilot/model.sdf:
+    #   lidar_joint pose      = 0 0 -0.15 0 0 0
+    #   lidar_sensor pose     = 0 0 0 1.5707963 0 0
+    lidar_extrinsics.translation_xyz.x: 0.0
+    lidar_extrinsics.translation_xyz.y: 0.0
+    lidar_extrinsics.translation_xyz.z: -0.15
+    lidar_extrinsics.rpy_rad.roll: 1.5707963
+    lidar_extrinsics.rpy_rad.pitch: 0.0
+    lidar_extrinsics.rpy_rad.yaw: 0.0

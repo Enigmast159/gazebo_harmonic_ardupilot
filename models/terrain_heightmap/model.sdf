@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<sdf version="1.10">
+  <model name="terrain_heightmap">
+    <static>true</static>
+    <link name="terrain_link">
+      <visual name="terrain_visual">
+        <cast_shadows>true</cast_shadows>
+        <transparency>0</transparency>
+        <geometry>
+          <heightmap>
+            <use_terrain_paging>false</use_terrain_paging>
+            <sampling>2</sampling>
+            <texture>
+              <diffuse>model://terrain_heightmap/materials/textures/soil.png</diffuse>
+              <normal>model://terrain_heightmap/materials/textures/flat_normal.png</normal>
+              <size>8</size>
+            </texture>
+            <texture>
+              <diffuse>model://terrain_heightmap/materials/textures/grass.png</diffuse>
+              <normal>model://terrain_heightmap/materials/textures/flat_normal.png</normal>
+              <size>8</size>
+            </texture>
+            <texture>
+              <diffuse>model://terrain_heightmap/materials/textures/rock.png</diffuse>
+              <normal>model://terrain_heightmap/materials/textures/flat_normal.png</normal>
+              <size>10</size>
+            </texture>
+            <blend>
+              <min_height>2.400</min_height>
+              <fade_dist>0.640</fade_dist>
+            </blend>
+            <blend>
+              <min_height>5.760</min_height>
+              <fade_dist>0.800</fade_dist>
+            </blend>
+            <uri>model://terrain_heightmap/heightmap.png</uri>
+            <size>100.000000 100.000000 8.000000</size>
+            <pos>0 0 0</pos>
+          </heightmap>
+        </geometry>
+      </visual>
+      <collision name="terrain_collision">
+        <geometry>
+          <mesh>
+            <uri>model://terrain_heightmap/collision.stl</uri>
+          </mesh>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>100</mu2>
+            </ode>
+            <bullet>
+              <friction>1.0</friction>
+              <friction2>1.0</friction2>
+              <rolling_friction>0.0</rolling_friction>
+            </bullet>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+  </model>
+</sdf>

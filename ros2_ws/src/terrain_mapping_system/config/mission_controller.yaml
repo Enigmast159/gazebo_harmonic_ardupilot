@@ -1,0 +1,36 @@
+/**:
+  ros__parameters:
+    pose_topic: /terrain_mapping/vehicle/pose
+    use_terrain_manifest: true
+    manifest_path: /home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json
+
+    fallback_bounds.x_min: -40.0
+    fallback_bounds.x_max: 40.0
+    fallback_bounds.y_min: -40.0
+    fallback_bounds.y_max: 40.0
+
+    mapping_altitude_m: 15.0
+    lane_spacing_m: 12.0
+    waypoint_tolerance_m: 0.25
+    waypoint_horizontal_tolerance_m: 0.25
+    waypoint_vertical_tolerance_m: 0.0
+    boundary_margin_m: 5.0
+    sweep_direction: x
+
+    run_id: ''
+    results_root: /home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results
+    mission_timeout_s: 900.0
+    command_interval_s: 0.2
+    arrival_timeout_s: 120.0
+    pose_timeout_s: 5.0
+    takeoff_altitude_tolerance_m: 0.3
+    guided_mode_timeout_s: 30.0
+    arming_timeout_s: 30.0
+    takeoff_timeout_s: 60.0
+    trajectory_log_period_s: 0.5
+    state_log_period_s: 5.0
+    dry_run: false
+
+    mavlink.connection_string: tcp:127.0.0.1:5760
+    mavlink.baudrate: 115200
+    mavlink.heartbeat_timeout_s: 30.0

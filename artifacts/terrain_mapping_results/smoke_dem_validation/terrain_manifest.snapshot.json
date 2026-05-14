@@ -1,0 +1,16 @@
+{
+  "canonical_file_paths": {
+    "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_ground_truth.snapshot.csv",
+    "manifest": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_manifest.snapshot.json"
+  },
+  "generated_at": "2026-05-04T00:00:00Z",
+  "seed": 999,
+  "terrain_extents": {
+    "x_max": 1.0,
+    "x_min": -1.0,
+    "y_max": 1.0,
+    "y_min": -1.0,
+    "z_max": 4.0,
+    "z_min": 0.0
+  }
+}

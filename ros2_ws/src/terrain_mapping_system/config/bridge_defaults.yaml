@@ -1,0 +1,28 @@
+world_name: random_terrain_ardupilot
+model_name: iris_with_ardupilot
+
+gazebo_topics:
+  clock: /clock
+  lidar_points: /lidar/points/points
+  vehicle_pose: /model/iris_with_ardupilot/pose
+
+ros_topics:
+  clock: /clock
+  lidar_points: /terrain_mapping/lidar/points
+  vehicle_pose_raw: /terrain_mapping/vehicle/pose/raw
+  vehicle_pose: /terrain_mapping/vehicle/pose
+
+frames:
+  map: map
+  base_link: base_link
+
+message_types:
+  lidar_points:
+    gazebo: gz.msgs.PointCloudPacked
+    ros: sensor_msgs/msg/PointCloud2
+  vehicle_pose:
+    gazebo: gz.msgs.Pose
+    ros: geometry_msgs/msg/PoseStamped
+  clock:
+    gazebo: gz.msgs.Clock
+    ros: rosgraph_msgs/msg/Clock

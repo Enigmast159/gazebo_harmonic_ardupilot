@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/amitryd/gazebo_harmonic_ardupilot/**)",
+      "Bash(python3 *)"
+    ]
+  },
+  "$version": 3
+}

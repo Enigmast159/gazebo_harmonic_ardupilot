@@ -1,0 +1,24 @@
+{
+  "filters": {
+    "max_range_m": 100.0,
+    "min_range_m": 0.75
+  },
+  "grid": {
+    "cols": 3,
+    "resolution_x_m": 1.0,
+    "resolution_y_m": 1.0,
+    "rows": 3,
+    "x_max": 1.0,
+    "x_min": -1.0,
+    "y_max": 1.0,
+    "y_min": -1.0
+  },
+  "manifest": {
+    "canonical_file_paths": {
+      "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_ground_truth.snapshot.csv"
+    },
+    "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_manifest.snapshot.json",
+    "seed": 999
+  },
+  "run_id": "smoke_dem_validation"
+}

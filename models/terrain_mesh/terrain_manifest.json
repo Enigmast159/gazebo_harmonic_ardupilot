@@ -1,0 +1,168 @@
+{
+  "generator": "generate_random_terrain_harmonic.py",
+  "generated_at": "2026-04-30T15:18:24.510682Z",
+  "seed": 5001,
+  "generator_params": {
+    "size": 257,
+    "scale": 28.0,
+    "octaves": 4,
+    "persistence": 0.42,
+    "lacunarity": 2.0,
+    "smooth_passes": 3,
+    "mesh_downsample_skip": 2,
+    "terrain_z": 8.0
+  },
+  "mesh_downsample_skip": 2,
+  "terrain_extents": {
+    "x_min": -50.0,
+    "x_max": 50.0,
+    "y_min": -50.0,
+    "y_max": 50.0,
+    "z_min": 0.0,
+    "z_max": 8.0
+  },
+  "terrain_xy_extents_m": {
+    "x": 100.0,
+    "y": 100.0
+  },
+  "terrain_z_scale_m": 8.0,
+  "grid_shape_raw": {
+    "rows": 129,
+    "cols": 129
+  },
+  "world_name": "random_terrain_ardupilot",
+  "vehicle_spawn": {
+    "x_m": -44.0,
+    "y_m": -44.0,
+    "z_m": 6.685
+  },
+  "platform_spawn": {
+    "x_m": -44.0,
+    "y_m": -44.0,
+    "z_m": 6.215
+  },
+  "vehicle_spawn_height_m": 6.685,
+  "vegetation": {
+    "tree_model": "pine_tree",
+    "tree_count": 18,
+    "tree_exclusion_radius_m": 10.0,
+    "tree_poses": [
+      [
+        -0.387,
+        27.817,
+        5.895,
+        2.73168
+      ],
+      [
+        -0.507,
+        -13.452,
+        1.95,
+        0.77413
+      ],
+      [
+        21.899,
+        8.841,
+        5.885,
+        -2.778527
+      ],
+      [
+        -13.228,
+        -28.094,
+        4.457,
+        0.73737
+      ],
+      [
+        23.457,
+        21.946,
+        4.769,
+        -0.521587
+      ],
+      [
+        16.052,
+        -35.593,
+        2.393,
+        -2.587491
+      ],
+      [
+        -5.676,
+        0.649,
+        4.812,
+        1.583329
+      ],
+      [
+        28.058,
+        -18.547,
+        2.556,
+        -3.106164
+      ],
+      [
+        -8.283,
+        -13.214,
+        3.266,
+        1.629957
+      ],
+      [
+        23.035,
+        28.091,
+        2.345,
+        -2.070017
+      ],
+      [
+        25.877,
+        -12.028,
+        5.846,
+        0.915121
+      ],
+      [
+        -36.959,
+        33.327,
+        5.66,
+        -2.355576
+      ],
+      [
+        8.757,
+        -25.469,
+        4.28,
+        -1.311004
+      ],
+      [
+        -39.421,
+        3.37,
+        6.826,
+        -2.763743
+      ],
+      [
+        -41.723,
+        -3.016,
+        5.998,
+        -0.684183
+      ],
+      [
+        35.12,
+        -22.312,
+        1.884,
+        -1.412301
+      ],
+      [
+        21.763,
+        -16.589,
+        5.082,
+        1.618998
+      ],
+      [
+        -24.436,
+        -21.036,
+        5.958,
+        1.01759
+      ]
+    ]
+  },
+  "canonical_file_paths": {
+    "visual_stl_mesh": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_mesh/model_visual.stl",
+    "collision_stl_mesh": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_mesh/model_collision.stl",
+    "model_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_mesh/model.sdf",
+    "model_config": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_mesh/model.config",
+    "manifest": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_mesh/terrain_manifest.json",
+    "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_mesh/terrain_ground_truth.csv"
+  }
+}

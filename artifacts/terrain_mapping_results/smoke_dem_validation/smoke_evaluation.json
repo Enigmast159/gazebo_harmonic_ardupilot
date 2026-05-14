@@ -1,0 +1,171 @@
+{
+  "acceptance": {
+    "criteria": {
+      "observed_area": {
+        "enabled": false,
+        "minimum_fraction": null
+      },
+      "processing_time": {
+        "per_frame_threshold_ms": 50.0,
+        "require_max_below_threshold": true,
+        "require_p95_below_threshold": true
+      },
+      "vertical_accuracy": {
+        "primary_metric": "rmse_m",
+        "threshold_m": 0.01
+      }
+    },
+    "overall_pass": true,
+    "processing_time_pass": true,
+    "vertical_accuracy_pass": true
+  },
+  "artifacts": {
+    "error_heatmap_ppm": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/smoke_evaluation_error_heatmap.ppm",
+    "error_map_npz": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/smoke_evaluation_error_map.npz",
+    "summary_json": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/smoke_evaluation.json",
+    "summary_markdown": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/smoke_evaluation.md"
+  },
+  "generated_at": "2026-05-04T20:49:57.453774Z",
+  "ground_truth": {
+    "data_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_ground_truth.snapshot.csv",
+    "grid_bounds": {
+      "x_max": 1.0,
+      "x_min": -1.0,
+      "y_max": 1.0,
+      "y_min": -1.0
+    },
+    "grid_shape": {
+      "cols": 3,
+      "rows": 3
+    },
+    "manifest_generated_at": "2026-05-04T00:00:00Z",
+    "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_manifest.snapshot.json",
+    "seed": 999,
+    "source_kind": "terrain_truth_csv"
+  },
+  "metrics": {
+    "latency": {
+      "frame_count": 3,
+      "max_processing_ms": 14.0,
+      "mean_processing_ms": 13.0,
+      "p95_processing_ms": 13.9
+    },
+    "vertical": {
+      "comparison_domain_cells": 9,
+      "mae_m": 0.0,
+      "max_abs_error_m": 0.0,
+      "observed_area_fraction": 1.0,
+      "observed_cells": 9,
+      "p95_abs_error_m": 0.0,
+      "rmse_m": 0.0
+    }
+  },
+  "reproducibility": {
+    "mapping": {
+      "config_fingerprint": null,
+      "dem_metadata_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/dem_metadata.json",
+      "dem_summary_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/dem_mapper_summary.json",
+      "filters": {
+        "max_range_m": 100.0,
+        "min_range_m": 0.75
+      },
+      "grid": {
+        "cols": 3,
+        "resolution_x_m": 1.0,
+        "resolution_y_m": 1.0,
+        "rows": 3,
+        "x_max": 1.0,
+        "x_min": -1.0,
+        "y_max": 1.0,
+        "y_min": -1.0
+      },
+      "manifest": {
+        "canonical_file_paths": {
+          "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_ground_truth.snapshot.csv"
+        },
+        "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_manifest.snapshot.json",
+        "seed": 999
+      }
+    },
+    "mission": {
+      "bounds": {
+        "x_max": 1.0,
+        "x_min": -1.0,
+        "y_max": 1.0,
+        "y_min": -1.0
+      },
+      "config_fingerprint": null,
+      "mission_summary_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/mission_summary.json",
+      "planned_path_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/planned_path.json",
+      "planner": {
+        "boundary_margin_m": 5.0,
+        "lane_spacing_m": 12.0,
+        "mapping_altitude_m": 15.0,
+        "sweep_direction": "x",
+        "waypoint_tolerance_m": 3.0
+      }
+    },
+    "software": {
+      "experiment_request_fingerprint": {
+        "exists": false,
+        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/experiment_request.json"
+      },
+      "experiment_request_path": null,
+      "numpy_version": "2.2.6",
+      "platform": "Linux-6.8.0-110-generic-x86_64-with-glibc2.35",
+      "python_version": "3.10.12"
+    },
+    "terrain": {
+      "ground_truth_fingerprint": {
+        "exists": true,
+        "modified_at_epoch_s": 1777927797.450262,
+        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_ground_truth.snapshot.csv",
+        "sha256": "beed5af2c66d3e762b9ecdaa2b68643cddc0f6d123b32b28579878945a1a4560",
+        "size_bytes": 180
+      },
+      "manifest_fingerprint": {
+        "exists": true,
+        "modified_at_epoch_s": 1777927797.450262,
+        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_manifest.snapshot.json",
+        "sha256": "08bdcb66a194db7624e7ca72130aeee8458e4d2b01e9eb39470391c1a70c0f9b",
+        "size_bytes": 544
+      },
+      "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation/terrain_manifest.snapshot.json",
+      "seed": 999
+    }
+  },
+  "run_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/smoke_dem_validation",
+  "run_id": "smoke_dem_validation",
+  "runtime_status": {
+    "dem_mapper_summary": {
+      "coverage_ratio": 1.0,
+      "latency": {
+        "frames_processed": 3,
+        "max_processing_ms": 14.0,
+        "mean_processing_ms": 13.0,
+        "p95_processing_ms": 13.9
+      },
+      "run_id": "smoke_dem_validation"
+    },
+    "mission_events_head": [],
+    "mission_summary": {
+      "bounds": {
+        "x_max": 1.0,
+        "x_min": -1.0,
+        "y_max": 1.0,
+        "y_min": -1.0
+      },
+      "final_status": "completed",
+      "planner": {
+        "boundary_margin_m": 5.0,
+        "lane_spacing_m": 12.0,
+        "mapping_altitude_m": 15.0,
+        "sweep_direction": "x",
+        "waypoint_tolerance_m": 3.0
+      },
+      "run_id": "smoke_dem_validation"
+    },
+    "trajectory_head": []
+  },
+  "schema_version": 1
+}

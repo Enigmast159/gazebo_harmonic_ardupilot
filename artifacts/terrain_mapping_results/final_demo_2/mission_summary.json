@@ -1,0 +1,32 @@
+{
+  "bounds": {
+    "x_max": 50.0,
+    "x_min": -50.0,
+    "y_max": 50.0,
+    "y_min": -50.0
+  },
+  "completed_at": "2026-05-04T21:25:56.099744Z",
+  "dry_run": false,
+  "duration_s": 110.855,
+  "failure_reason": null,
+  "final_status": "waiting_for_heartbeat",
+  "planner": {
+    "boundary_margin_m": 5.0,
+    "lane_spacing_m": 12.0,
+    "mapping_altitude_m": 15.0,
+    "sweep_direction": "x",
+    "waypoint_tolerance_m": 3.0
+  },
+  "results": {
+    "actual_trajectory": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/actual_trajectory.jsonl",
+    "mission_events": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/mission_events.jsonl",
+    "mission_status": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/mission_status.json",
+    "mission_summary": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/mission_summary.json",
+    "planned_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2/planned_path.json",
+    "results_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_demo_2"
+  },
+  "run_id": "final_demo_2",
+  "trajectory_samples": 197,
+  "waypoints_reached": 0,
+  "waypoints_total": 18
+}

@@ -1,0 +1,4 @@
+frame_index,stamp_sec,processing_ms,points_in,points_after_range,points_after_self_filter,points_used,cells_updated
+1,1.0,12.0,9,9,9,9,9
+2,2.0,13.0,9,9,9,9,9
+3,3.0,14.0,9,9,9,9,9
