@@ -44,7 +44,7 @@
     </include>
 
     <model name="drone_platform">
-      <pose>-44.0 -44.0 2.162 0 0 0</pose>
+      <pose>-44.0 -44.0 4.789 0 0 0</pose>
       <static>true</static>
       <link name="platform_link">
         <visual name="platform_visual">
@@ -85,116 +85,10 @@
     <include>
       <uri>model://iris_with_ardupilot</uri>
       <name>iris_with_ardupilot</name>
-      <pose>-44.0 -44.0 2.632 0 0 0</pose>
+      <pose>-44.0 -44.0 5.259 0 0 0</pose>
     </include>
 
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_00</name>
-      <pose>-0.386 22.881 4.924 0 0 2.252775</pose>
-    </include>
 
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_01</name>
-      <pose>-12.953 -40.337 3.934 0 0 -0.855339</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_02</name>
-      <pose>-36.285 16.532 5.08 0 0 1.955043</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_03</name>
-      <pose>-23.602 -19.692 2.078 0 0 2.813751</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_04</name>
-      <pose>-15.407 16.754 3.045 0 0 -3.052982</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_05</name>
-      <pose>-4.267 4.163 2.882 0 0 0.105887</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_06</name>
-      <pose>-12.972 -22.547 4.503 0 0 -1.050202</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_07</name>
-      <pose>37.669 -27.409 4.418 0 0 3.118698</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_08</name>
-      <pose>20.028 11.758 5.307 0 0 -3.12062</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_09</name>
-      <pose>-19.946 -31.029 2.292 0 0 -1.376257</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_10</name>
-      <pose>-17.266 35.433 5.887 0 0 2.34583</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_11</name>
-      <pose>12.868 3.68 2.701 0 0 -1.280478</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_12</name>
-      <pose>1.063 -24.568 3.569 0 0 2.305044</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_13</name>
-      <pose>-2.894 -13.127 4.951 0 0 -3.08814</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_14</name>
-      <pose>-7.506 10.168 2.766 0 0 0.513165</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_15</name>
-      <pose>-10.03 30.192 5.081 0 0 0.097953</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_16</name>
-      <pose>-36.495 36.177 5.391 0 0 -2.938462</pose>
-    </include>
-
-    <include>
-      <uri>model://pine_tree</uri>
-      <name>pine_tree_17</name>
-      <pose>24.165 -23.509 6.261 0 0 2.524567</pose>
-    </include>
 
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>

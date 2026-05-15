@@ -15,7 +15,7 @@
       "stl_mesh": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/collision.stl",
       "world_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/worlds/random_terrain_ardupilot.sdf"
     },
-    "generated_at": "2026-05-13T17:40:50.735949Z",
+    "generated_at": "2026-05-15T14:15:51.327290Z",
     "grid_shape_raw": {
       "cols": 257,
       "rows": 257
@@ -39,7 +39,7 @@
     "world_name": "random_terrain_ardupilot"
   },
   "frame": "map_enu",
-  "generated_at": "2026-05-13T17:41:16.307057Z",
+  "generated_at": "2026-05-15T14:16:56.218732Z",
   "planner": {
     "boundary_margin_m": 5.0,
     "lane_spacing_m": 12.0,

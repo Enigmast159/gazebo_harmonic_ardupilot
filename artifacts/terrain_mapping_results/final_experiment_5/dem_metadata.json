@@ -1,0 +1,74 @@
+{
+  "filters": {
+    "max_range_m": 120.0,
+    "min_range_m": 0.75,
+    "self_filter_base_z_max_m": -0.25,
+    "z_bounds_m": [
+      -5.0,
+      13.0
+    ]
+  },
+  "generated_at": "2026-05-15T14:34:52Z",
+  "grid": {
+    "cols": 257,
+    "resolution_x_m": 0.390625,
+    "resolution_y_m": 0.390625,
+    "rows": 257,
+    "x_max": 50.0,
+    "x_min": -50.0,
+    "y_max": 50.0,
+    "y_min": -50.0
+  },
+  "lidar_extrinsics": {
+    "rpy_rad": [
+      1.5707963,
+      0.0,
+      0.0
+    ],
+    "translation_xyz": [
+      0.0,
+      0.0,
+      -0.15
+    ]
+  },
+  "manifest": {
+    "canonical_file_paths": {
+      "collision_stl": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/collision.stl",
+      "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_ground_truth.csv",
+      "heightmap_model_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap",
+      "heightmap_png": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/heightmap.png",
+      "model_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/model.sdf",
+      "stl_mesh": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/collision.stl",
+      "world_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/worlds/random_terrain_ardupilot.sdf"
+    },
+    "generated_at": "2026-05-15T14:27:40.423763Z",
+    "grid_shape_raw": {
+      "cols": 257,
+      "rows": 257
+    },
+    "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json",
+    "seed": 505,
+    "terrain_extents": {
+      "x_max": 50.0,
+      "x_min": -50.0,
+      "y_max": 50.0,
+      "y_min": -50.0,
+      "z_max": 8.0,
+      "z_min": 0.0
+    },
+    "world_name": "random_terrain_ardupilot"
+  },
+  "map_axis_signs_xyz": [
+    1.0,
+    -1.0,
+    1.0
+  ],
+  "point_topic": "/terrain_mapping/lidar/points",
+  "pose_topic": "/terrain_mapping/vehicle/pose",
+  "run_id": "final_experiment_5",
+  "sensor_axis_signs_xyz": [
+    1.0,
+    1.0,
+    1.0
+  ]
+}

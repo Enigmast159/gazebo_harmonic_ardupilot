@@ -5,9 +5,9 @@
     "y_max": 50.0,
     "y_min": -50.0
   },
-  "completed_at": "2026-05-13T17:48:01.966447Z",
+  "completed_at": "2026-05-15T14:23:03.871744Z",
   "dry_run": false,
-  "duration_s": 405.659,
+  "duration_s": 367.653,
   "failure_reason": null,
   "final_status": "landing",
   "planner": {
@@ -29,7 +29,7 @@
     "results_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_3"
   },
   "run_id": "final_experiment_3",
-  "trajectory_samples": 811,
+  "trajectory_samples": 727,
   "waypoints_reached": 19,
   "waypoints_total": 19
 }

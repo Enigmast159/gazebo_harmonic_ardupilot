@@ -8,7 +8,7 @@
       13.0
     ]
   },
-  "generated_at": "2026-05-13T17:48:01Z",
+  "generated_at": "2026-05-15T14:23:03Z",
   "grid": {
     "cols": 257,
     "resolution_x_m": 0.390625,
@@ -41,7 +41,7 @@
       "stl_mesh": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/collision.stl",
       "world_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/worlds/random_terrain_ardupilot.sdf"
     },
-    "generated_at": "2026-05-13T17:40:50.735949Z",
+    "generated_at": "2026-05-15T14:15:51.327290Z",
     "grid_shape_raw": {
       "cols": 257,
       "rows": 257

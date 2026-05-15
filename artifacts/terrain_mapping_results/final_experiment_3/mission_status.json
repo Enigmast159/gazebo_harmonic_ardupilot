@@ -4,7 +4,7 @@
   "failure_reason": null,
   "run_id": "final_experiment_3",
   "state": "landing",
-  "timestamp": "2026-05-13T17:48:01.966828Z",
-  "trajectory_samples": 811,
+  "timestamp": "2026-05-15T14:23:03.872077Z",
+  "trajectory_samples": 727,
   "waypoint_count": 19
 }

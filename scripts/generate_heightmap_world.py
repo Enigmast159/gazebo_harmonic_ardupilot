@@ -510,7 +510,7 @@ def parse_args():
     parser.add_argument("--platform-y", type=float, default=-44.0)
     parser.add_argument("--platform-z", type=float, default=None)
     parser.add_argument("--tree-model", default="pine_tree")
-    parser.add_argument("--tree-count", type=int, default=18)
+    parser.add_argument("--tree-count", type=int, default=0)
     parser.add_argument("--tree-exclusion-radius", type=float, default=10.0)
     return parser.parse_args()
 

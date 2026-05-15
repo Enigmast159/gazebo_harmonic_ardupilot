@@ -25,9 +25,9 @@
     "summary_json": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_4/run_evaluation.json",
     "summary_markdown": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_4/run_evaluation.md"
   },
-  "generated_at": "2026-05-13T17:58:10.438521Z",
+  "generated_at": "2026-05-15T14:52:09.264644Z",
   "ground_truth": {
-    "data_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_ground_truth.csv",
+    "data_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_4/terrain_ground_truth.snapshot.csv",
     "grid_bounds": {
       "x_max": 50.0,
       "x_min": -50.0,
@@ -39,7 +39,7 @@
       "rows": 257
     },
     "manifest_generated_at": "2026-05-13T17:50:28.674025Z",
-    "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json",
+    "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_4/terrain_manifest.snapshot.json",
     "seed": 5004,
     "source_kind": "terrain_truth_csv"
   },
@@ -151,19 +151,19 @@
     "terrain": {
       "ground_truth_fingerprint": {
         "exists": true,
-        "modified_at_epoch_s": 1778694628.669138,
-        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_ground_truth.csv",
+        "modified_at_epoch_s": 1778695090.39869,
+        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_4/terrain_ground_truth.snapshot.csv",
         "sha256": "96042a3133a3e5eac5158f57453db44e9aadf5f9ec5573dd90a3207b836f9ff7",
         "size_bytes": 2351419
       },
       "manifest_fingerprint": {
         "exists": true,
-        "modified_at_epoch_s": 1778694628.673139,
-        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json",
-        "sha256": "675f6e961e8f48576a0b1a44b78d22d7d4cec93289379de0a901f9c1bf1fa5be",
-        "size_bytes": 3275
+        "modified_at_epoch_s": 1778695090.39969,
+        "path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_4/terrain_manifest.snapshot.json",
+        "sha256": "4d2e2d6bd55b36f6567ba7194c9abf4588c6b702c0a910f25bc7141cb6f0737b",
+        "size_bytes": 3463
       },
-      "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/terrain_manifest.json",
+      "manifest_path": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/final_experiment_4/terrain_manifest.snapshot.json",
       "seed": 5004
     }
   },
