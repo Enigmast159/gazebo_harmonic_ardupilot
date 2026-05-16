@@ -13,6 +13,7 @@ from geometry_msgs.msg import PoseStamped
 from rclpy.node import Node
 from rclpy.qos import DurabilityPolicy, HistoryPolicy, QoSProfile, ReliabilityPolicy
 from sensor_msgs.msg import PointCloud2
+from std_msgs.msg import String
 
 from terrain_mapping_system.mapping.dem import (
     DEMArtifactWriter,
@@ -64,6 +65,10 @@ class DemMapper(Node):
         self._dem_pointcloud_topic = str(self.get_parameter('dem_pointcloud_topic').value)
         self._dem_frame_id = str(self.get_parameter('dem_frame_id').value)
         self._dem_min_samples = int(self.get_parameter('dem_min_samples').value)
+        self._integrate_only_during_sweep = bool(
+            self.get_parameter('integrate_only_during_sweep').value
+        )
+        self._mission_state_topic = str(self.get_parameter('mission_state_topic').value)
         self._min_range_m = float(self.get_parameter('min_range_m').value)
         self._max_range_m = float(self.get_parameter('max_range_m').value)
         self._self_filter_base_z_max_m = float(self.get_parameter('self_filter_base_z_max_m').value)
@@ -126,8 +131,10 @@ class DemMapper(Node):
             self._z_bounds_m = None
 
         self._last_pose: Optional[VehiclePose] = None
+        self._mission_state: Optional[str] = None
         self._frames_processed = 0
         self._frames_skipped_no_pose = 0
+        self._frames_skipped_inactive_state = 0
         self._cumulative_points_used = 0
         self._latencies_ms: List[float] = []
         self._last_snapshot_time = 0.0
@@ -143,6 +150,18 @@ class DemMapper(Node):
             self._point_topic,
             self._cloud_callback,
             10,
+        )
+        mission_state_qos = QoSProfile(
+            history=HistoryPolicy.KEEP_LAST,
+            depth=1,
+            reliability=ReliabilityPolicy.RELIABLE,
+            durability=DurabilityPolicy.TRANSIENT_LOCAL,
+        )
+        self._mission_state_subscription = self.create_subscription(
+            String,
+            self._mission_state_topic,
+            self._mission_state_callback,
+            mission_state_qos,
         )
         self._dem_pointcloud_publisher = None
         if self._publish_dem_pointcloud:
@@ -190,6 +209,8 @@ class DemMapper(Node):
         self.declare_parameter('dem_pointcloud_topic', '/terrain_mapping/dem/points')
         self.declare_parameter('dem_frame_id', 'map')
         self.declare_parameter('dem_min_samples', 1)
+        self.declare_parameter('integrate_only_during_sweep', True)
+        self.declare_parameter('mission_state_topic', '/terrain_mapping/mission/state')
         self.declare_parameter('min_range_m', 0.75)
         self.declare_parameter('max_range_m', 120.0)
         self.declare_parameter('self_filter_base_z_max_m', -0.25)
@@ -243,9 +264,15 @@ class DemMapper(Node):
             ),
         )
 
+    def _mission_state_callback(self, message: String) -> None:
+        self._mission_state = message.data.strip()
+
     def _cloud_callback(self, message: PointCloud2) -> None:
         if self._last_pose is None:
             self._frames_skipped_no_pose += 1
+            return
+        if self._integrate_only_during_sweep and self._mission_state != 'executing_sweep':
+            self._frames_skipped_inactive_state += 1
             return
         if not pointcloud2_has_xyz_fields(message):
             self.get_logger().warning('Skipping PointCloud2 without x/y/z fields')
@@ -309,6 +336,7 @@ class DemMapper(Node):
             'generated_at': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
             'point_topic': self._point_topic,
             'pose_topic': self._pose_topic,
+            'mission_state_topic': self._mission_state_topic,
             'grid': self._grid_spec.as_dict(),
             'lidar_extrinsics': self._extrinsics.as_dict(),
             'manifest': manifest_metadata,
@@ -317,6 +345,7 @@ class DemMapper(Node):
                 'max_range_m': self._max_range_m,
                 'self_filter_base_z_max_m': self._self_filter_base_z_max_m,
                 'z_bounds_m': list(self._z_bounds_m) if self._z_bounds_m is not None else None,
+                'integrate_only_during_sweep': self._integrate_only_during_sweep,
             },
             'sensor_axis_signs_xyz': list(self._sensor_axis_signs_xyz),
             'map_axis_signs_xyz': list(self._map_axis_signs_xyz),
@@ -329,6 +358,7 @@ class DemMapper(Node):
         latency_stats = {
             'frames_processed': self._frames_processed,
             'frames_skipped_no_pose': self._frames_skipped_no_pose,
+            'frames_skipped_inactive_state': self._frames_skipped_inactive_state,
             'mean_processing_ms': round(float(latencies.mean()), 3) if latencies.size else None,
             'p95_processing_ms': round(float(np.percentile(latencies, 95)), 3) if latencies.size else None,
             'max_processing_ms': round(float(latencies.max()), 3) if latencies.size else None,

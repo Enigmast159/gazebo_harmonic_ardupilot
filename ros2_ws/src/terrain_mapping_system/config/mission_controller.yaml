@@ -30,6 +30,7 @@
     trajectory_log_period_s: 0.5
     state_log_period_s: 5.0
     dry_run: false
+    state_topic: /terrain_mapping/mission/state
 
     mavlink.connection_string: tcp:127.0.0.1:5760
     mavlink.baudrate: 115200

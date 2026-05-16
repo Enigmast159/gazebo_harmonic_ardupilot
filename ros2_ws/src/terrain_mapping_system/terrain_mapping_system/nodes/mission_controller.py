@@ -11,6 +11,8 @@ from typing import Dict, List, Optional
 import rclpy
 from geometry_msgs.msg import PoseStamped
 from rclpy.node import Node
+from rclpy.qos import DurabilityPolicy, HistoryPolicy, QoSProfile, ReliabilityPolicy
+from std_msgs.msg import String
 
 from terrain_mapping_system.mission.artifacts import MissionArtifactWriter, utc_now_iso
 from terrain_mapping_system.mission.mavlink_adapter import MavlinkAdapter, MavlinkConfig
@@ -93,6 +95,7 @@ class MissionController(Node):
         self._arming_timeout_s = float(self.get_parameter('arming_timeout_s').value)
         self._takeoff_timeout_s = float(self.get_parameter('takeoff_timeout_s').value)
         self._dry_run = bool(self.get_parameter('dry_run').value)
+        self._state_topic = str(self.get_parameter('state_topic').value)
 
         self._pose_topic = str(self.get_parameter('pose_topic').value)
         self._last_pose: Optional[MissionPose] = None
@@ -108,6 +111,13 @@ class MissionController(Node):
             self._pose_callback,
             20,
         )
+        state_qos = QoSProfile(
+            history=HistoryPolicy.KEEP_LAST,
+            depth=1,
+            reliability=ReliabilityPolicy.RELIABLE,
+            durability=DurabilityPolicy.TRANSIENT_LOCAL,
+        )
+        self._state_publisher = self.create_publisher(String, self._state_topic, state_qos)
 
         self._mavlink = MavlinkAdapter(
             MavlinkConfig(
@@ -163,6 +173,7 @@ class MissionController(Node):
         self.declare_parameter('trajectory_log_period_s', 0.5)
         self.declare_parameter('state_log_period_s', 5.0)
         self.declare_parameter('dry_run', False)
+        self.declare_parameter('state_topic', '/terrain_mapping/mission/state')
         self.declare_parameter('mavlink.connection_string', 'tcp:127.0.0.1:5760')
         self.declare_parameter('mavlink.baudrate', 115200)
         self.declare_parameter('mavlink.heartbeat_timeout_s', 30.0)
@@ -420,8 +431,14 @@ class MissionController(Node):
         self._state = state
         self._state_since = time.monotonic()
         self.get_logger().info(f'state={state.value} reason="{reason}"')
+        self._publish_state()
         self._record_event('state_transition', details={'state': state.value, 'reason': reason})
         self._write_status()
+
+    def _publish_state(self) -> None:
+        message = String()
+        message.data = self._state.value
+        self._state_publisher.publish(message)
 
     def _record_event(self, event: str, details: Optional[Dict[str, object]] = None) -> None:
         payload = {

@@ -20,6 +20,8 @@
     dem_pointcloud_topic: /terrain_mapping/dem/points
     dem_frame_id: map
     dem_min_samples: 1
+    integrate_only_during_sweep: true
+    mission_state_topic: /terrain_mapping/mission/state
     min_range_m: 0.75
     max_range_m: 120.0
     self_filter_base_z_max_m: -0.25

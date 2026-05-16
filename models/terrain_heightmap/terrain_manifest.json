@@ -1,7 +1,7 @@
 {
   "generator": "generate_heightmap_world.py",
-  "generated_at": "2026-05-15T14:52:07.492188Z",
-  "seed": 505,
+  "generated_at": "2026-05-16T19:26:46.957179Z",
+  "seed": 5010,
   "terrain_representation": "sdf_heightmap",
   "generator_params": {
     "world": "random_terrain_ardupilot",
@@ -16,7 +16,7 @@
     "terrain_y": 100.0,
     "terrain_z": 8.0,
     "sampling": 2,
-    "seed": 505,
+    "seed": 5010,
     "drone_x": -44.0,
     "drone_y": -44.0,
     "drone_z": null,
@@ -35,12 +35,12 @@
   "vehicle_spawn": {
     "x_m": -44.0,
     "y_m": -44.0,
-    "z_m": 5.259
+    "z_m": 6.524
   },
   "platform_spawn": {
     "x_m": -44.0,
     "y_m": -44.0,
-    "z_m": 4.789
+    "z_m": 6.054
   },
   "vegetation": {
     "tree_model": "pine_tree",

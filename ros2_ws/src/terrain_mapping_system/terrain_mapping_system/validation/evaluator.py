@@ -17,10 +17,11 @@ from .common import file_fingerprint, read_json, software_context, utc_now_iso, 
 
 
 DEFAULT_OUTPUT_BASENAME = 'run_evaluation'
-EVALUATION_SCHEMA_VERSION = 2
+EVALUATION_SCHEMA_VERSION = 3
 METRIC_CHOICES = ('mae_m', 'rmse_m', 'p95_abs_error_m', 'max_abs_error_m')
 ABS_ERROR_REPORT_THRESHOLD_M = 0.2
 ABS_ERROR_REPORT_THRESHOLD_EPSILON_M = 1e-6
+DEFAULT_PLATFORM_EXCLUSION_SIZE_M = 4.0
 
 
 @dataclass(frozen=True)
@@ -369,6 +370,72 @@ def _truth_on_predicted_grid(truth: RegularGrid, predicted: PredictedDEM) -> Tup
     return truth_on_grid, comparison_domain
 
 
+def _platform_exclusion_config(manifest: Dict[str, Any]) -> Optional[Dict[str, float]]:
+    if not isinstance(manifest, dict):
+        return None
+    platform_spawn = manifest.get('platform_spawn')
+    if not isinstance(platform_spawn, dict):
+        return None
+
+    x_m = platform_spawn.get('x_m')
+    y_m = platform_spawn.get('y_m')
+    if x_m is None or y_m is None:
+        return None
+
+    size_x_m = DEFAULT_PLATFORM_EXCLUSION_SIZE_M
+    size_y_m = DEFAULT_PLATFORM_EXCLUSION_SIZE_M
+    platform_size = manifest.get('platform_size_m')
+    if isinstance(platform_size, (int, float)):
+        size_x_m = float(platform_size)
+        size_y_m = float(platform_size)
+    elif isinstance(platform_size, dict):
+        size_x_m = float(platform_size.get('x_m', DEFAULT_PLATFORM_EXCLUSION_SIZE_M))
+        size_y_m = float(platform_size.get('y_m', DEFAULT_PLATFORM_EXCLUSION_SIZE_M))
+
+    return {
+        'center_x_m': float(x_m),
+        'center_y_m': float(y_m),
+        'size_x_m': float(size_x_m),
+        'size_y_m': float(size_y_m),
+    }
+
+
+def _predicted_map_axis_signs(predicted: PredictedDEM) -> Tuple[float, float, float]:
+    raw = predicted.metadata.get('map_axis_signs_xyz')
+    if isinstance(raw, (list, tuple)) and len(raw) == 3:
+        try:
+            return (float(raw[0]), float(raw[1]), float(raw[2]))
+        except (TypeError, ValueError):
+            pass
+    return (1.0, 1.0, 1.0)
+
+
+def _platform_exclusion_mask(
+    predicted: PredictedDEM,
+    manifest: Dict[str, Any],
+) -> Tuple[np.ndarray, Optional[Dict[str, float]]]:
+    config = _platform_exclusion_config(manifest)
+    if config is None:
+        return np.zeros(predicted.height_mean_m.shape, dtype=bool), None
+
+    map_axis_signs = _predicted_map_axis_signs(predicted)
+    center_x_m = config['center_x_m'] * map_axis_signs[0]
+    center_y_m = config['center_y_m'] * map_axis_signs[1]
+    x_mesh, y_mesh = np.meshgrid(predicted.x_coordinates_m, predicted.y_coordinates_m)
+    half_size_x_m = 0.5 * config['size_x_m']
+    half_size_y_m = 0.5 * config['size_y_m']
+    mask = (
+        (x_mesh >= center_x_m - half_size_x_m)
+        & (x_mesh <= center_x_m + half_size_x_m)
+        & (y_mesh >= center_y_m - half_size_y_m)
+        & (y_mesh <= center_y_m + half_size_y_m)
+    )
+    config = dict(config)
+    config['center_x_m'] = center_x_m
+    config['center_y_m'] = center_y_m
+    return mask, config
+
+
 def _read_latency_values(path: Path) -> np.ndarray:
     if not path.is_file():
         return np.empty((0,), dtype=np.float64)
@@ -473,11 +540,12 @@ def _build_markdown_summary(summary: Dict[str, Any]) -> str:
         f'- p95 absolute error: {metrics["vertical"]["p95_abs_error_m"]}',
         f'- Max absolute error: {metrics["vertical"]["max_abs_error_m"]}',
         (
-            f'- Fraction within {metrics["vertical"]["abs_error_within_threshold_m"]} m: '
-            f'{metrics["vertical"]["abs_error_within_threshold_fraction"]}'
+        f'- Fraction within {metrics["vertical"]["abs_error_within_threshold_m"]} m: '
+        f'{metrics["vertical"]["abs_error_within_threshold_fraction"]}'
         ),
         f'- Observed-area fraction: {metrics["vertical"]["observed_area_fraction"]}',
         f'- Compared cells: {metrics["vertical"]["observed_cells"]} / {metrics["vertical"]["comparison_domain_cells"]}',
+        f'- Excluded platform cells: {metrics["vertical"]["excluded_platform_cells"]}',
         '',
         '## Latency Metrics',
         '',
@@ -536,8 +604,9 @@ def evaluate_run_directory(
         _snapshot_resolved_inputs(run_dir, truth)
 
     truth_on_grid, comparison_domain = _truth_on_predicted_grid(truth.grid, predicted)
+    platform_exclusion_mask, platform_exclusion = _platform_exclusion_mask(predicted, truth.manifest)
     coverage_mask = predicted.coverage_mask.astype(bool, copy=False)
-    comparison_domain_mask = comparison_domain & np.isfinite(truth_on_grid)
+    comparison_domain_mask = comparison_domain & np.isfinite(truth_on_grid) & ~platform_exclusion_mask
     evaluation_mask = comparison_domain_mask & coverage_mask & np.isfinite(predicted.height_mean_m)
 
     signed_error_m = np.full(predicted.height_mean_m.shape, np.nan, dtype=np.float64)
@@ -546,6 +615,7 @@ def evaluate_run_directory(
     abs_error_m[evaluation_mask] = np.abs(signed_error_m[evaluation_mask])
 
     comparison_domain_cells = int(comparison_domain_mask.sum())
+    excluded_platform_cells = int((comparison_domain & platform_exclusion_mask).sum())
     observed_cells = int(evaluation_mask.sum())
     observed_area_fraction = (
         float(observed_cells) / float(comparison_domain_cells) if comparison_domain_cells > 0 else 0.0
@@ -626,6 +696,7 @@ def evaluate_run_directory(
         absolute_error_m=abs_error_m.astype(np.float32),
         comparison_domain_mask=comparison_domain_mask,
         evaluation_mask=evaluation_mask,
+        platform_exclusion_mask=platform_exclusion_mask,
         x_coordinates_m=predicted.x_coordinates_m.astype(np.float32),
         y_coordinates_m=predicted.y_coordinates_m.astype(np.float32),
     )
@@ -644,6 +715,14 @@ def evaluate_run_directory(
             'grid_bounds': truth.grid.bounds(),
             'manifest_generated_at': truth.manifest.get('generated_at') if isinstance(truth.manifest, dict) else None,
             'seed': truth.manifest.get('seed') if isinstance(truth.manifest, dict) else None,
+            'platform_exclusion': {
+                'enabled': bool(platform_exclusion is not None),
+                'center_x_m': _rounded(platform_exclusion.get('center_x_m')) if platform_exclusion else None,
+                'center_y_m': _rounded(platform_exclusion.get('center_y_m')) if platform_exclusion else None,
+                'size_x_m': _rounded(platform_exclusion.get('size_x_m')) if platform_exclusion else None,
+                'size_y_m': _rounded(platform_exclusion.get('size_y_m')) if platform_exclusion else None,
+                'excluded_cells': excluded_platform_cells,
+            },
         },
         'metrics': {
             'vertical': {
@@ -659,6 +738,7 @@ def evaluate_run_directory(
                 'observed_area_fraction': _rounded(observed_area_fraction),
                 'comparison_domain_cells': comparison_domain_cells,
                 'observed_cells': observed_cells,
+                'excluded_platform_cells': excluded_platform_cells,
             },
             'latency': {
                 'frame_count': int(latencies_ms.size),

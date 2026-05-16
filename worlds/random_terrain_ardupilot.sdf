@@ -44,7 +44,7 @@
     </include>
 
     <model name="drone_platform">
-      <pose>-44.0 -44.0 4.789 0 0 0</pose>
+      <pose>-44.0 -44.0 6.054 0 0 0</pose>
       <static>true</static>
       <link name="platform_link">
         <visual name="platform_visual">
@@ -85,7 +85,7 @@
     <include>
       <uri>model://iris_with_ardupilot</uri>
       <name>iris_with_ardupilot</name>
-      <pose>-44.0 -44.0 5.259 0 0 0</pose>
+      <pose>-44.0 -44.0 6.524 0 0 0</pose>
     </include>
 
 

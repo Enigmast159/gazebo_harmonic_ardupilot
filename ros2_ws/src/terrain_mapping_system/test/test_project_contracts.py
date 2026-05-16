@@ -46,3 +46,18 @@ def test_bridge_defaults_use_lidar_pointcloud_subtopic():
     defaults_text = defaults_path.read_text(encoding='utf-8')
 
     assert 'lidar_points: /lidar/points/points' in defaults_text
+
+
+def test_mapper_config_gates_dem_integration_to_sweep_state():
+    config_path = REPO_ROOT / 'ros2_ws' / 'src' / 'terrain_mapping_system' / 'config' / 'dem_mapper.yaml'
+    config_text = config_path.read_text(encoding='utf-8')
+
+    assert 'integrate_only_during_sweep: true' in config_text
+    assert 'mission_state_topic: /terrain_mapping/mission/state' in config_text
+
+
+def test_mission_controller_config_publishes_state_topic():
+    config_path = REPO_ROOT / 'ros2_ws' / 'src' / 'terrain_mapping_system' / 'config' / 'mission_controller.yaml'
+    config_text = config_path.read_text(encoding='utf-8')
+
+    assert 'state_topic: /terrain_mapping/mission/state' in config_text
