@@ -1,0 +1,10 @@
+{
+  "current_waypoint_index": 19,
+  "dry_run": false,
+  "failure_reason": null,
+  "run_id": "exp_4",
+  "state": "landing",
+  "timestamp": "2026-05-16T17:17:10.434319Z",
+  "trajectory_samples": 926,
+  "waypoint_count": 19
+}

@@ -1,0 +1,60 @@
+{
+  "canonical_file_paths": {
+    "collision_stl": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/collision.stl",
+    "ground_truth_csv": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/exp_2/terrain_ground_truth.snapshot.csv",
+    "heightmap_model_dir": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap",
+    "heightmap_png": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/heightmap.png",
+    "manifest": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/artifacts/terrain_mapping_results/exp_2/terrain_manifest.snapshot.json",
+    "model_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/models/terrain_heightmap/model.sdf",
+    "world_sdf": "/home/amitryd/diplom/gazebo_harmonic_ardupilot/worlds/random_terrain_ardupilot.sdf"
+  },
+  "generated_at": "2026-05-16T16:35:58.305755Z",
+  "generator": "generate_heightmap_world.py",
+  "generator_params": {
+    "drone_x": -44.0,
+    "drone_y": -44.0,
+    "drone_z": null,
+    "lacunarity": 2.0,
+    "octaves": 4,
+    "persistence": 0.42,
+    "platform_x": -44.0,
+    "platform_y": -44.0,
+    "platform_z": null,
+    "sampling": 2,
+    "scale": 28.0,
+    "seed": 2,
+    "size": 257,
+    "smooth_passes": 3,
+    "terrain_model": "terrain_heightmap",
+    "terrain_x": 100.0,
+    "terrain_y": 100.0,
+    "terrain_z": 8.0,
+    "tree_count": 0,
+    "tree_exclusion_radius": 10.0,
+    "tree_model": "pine_tree",
+    "world": "random_terrain_ardupilot"
+  },
+  "platform_spawn": {
+    "x_m": -44.0,
+    "y_m": -44.0,
+    "z_m": 5.08
+  },
+  "seed": 2,
+  "terrain_representation": "sdf_heightmap",
+  "terrain_xy_extents_m": {
+    "x": 100.0,
+    "y": 100.0
+  },
+  "terrain_z_scale_m": 8.0,
+  "vegetation": {
+    "tree_count": 0,
+    "tree_exclusion_radius_m": 10.0,
+    "tree_model": "pine_tree",
+    "tree_poses": []
+  },
+  "vehicle_spawn": {
+    "x_m": -44.0,
+    "y_m": -44.0,
+    "z_m": 5.55
+  }
+}

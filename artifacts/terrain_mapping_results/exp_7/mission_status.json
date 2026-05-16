@@ -1,0 +1,10 @@
+{
+  "current_waypoint_index": 0,
+  "dry_run": false,
+  "failure_reason": null,
+  "run_id": "exp_7",
+  "state": "waiting_for_heartbeat",
+  "timestamp": "2026-05-16T18:51:26.062819Z",
+  "trajectory_samples": 53,
+  "waypoint_count": 19
+}

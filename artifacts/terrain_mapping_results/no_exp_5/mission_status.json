@@ -1,0 +1,10 @@
+{
+  "current_waypoint_index": 19,
+  "dry_run": false,
+  "failure_reason": "mission timeout after 900.0s",
+  "run_id": "no_exp_5",
+  "state": "aborting",
+  "timestamp": "2026-05-16T17:56:45.107282Z",
+  "trajectory_samples": 2636,
+  "waypoint_count": 19
+}
